@@ -5,13 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas & CSS</title>
-
     <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
        table {
         width: 100vw;
         text-align: center;
         border-collapse: collapse;
         border: 1px solid #000;
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
        }
 
        table th, table td {
@@ -24,6 +30,9 @@
         color: white;
        }
 
+       table tr:nth-of-type(2n) {
+        background-color: #f2f2f2;
+       }
     </style>
 </head>
 
