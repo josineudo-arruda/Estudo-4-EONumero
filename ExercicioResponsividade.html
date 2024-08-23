@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flex & Responsividade</title>
     <style>
+        body {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
         .box {
             width: 200px;
             height: 200px;
@@ -13,12 +19,19 @@
             justify-content: center;
             align-items: center;
             font-size: 20px;
+            transition: 0.5s ease;
         }
 
         .yellow { background-color: yellow;}
         .red { background-color: red;}
         .green { background-color: green;}
         .blue { background-color: blue;}
+
+        @media only screen and (max-width: 768px) {
+            .box {
+            width: 100%;
+        }
+        }
 
     </style>
 </head>
